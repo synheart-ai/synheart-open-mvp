@@ -178,7 +178,7 @@ synheart-open-mvp/
 │  │  ├─ src/App.tsx
 │  │  └─ src/components/SignalCard.tsx
 │  └─ notebooks/
-│     └─ heart_rate_visualizer.ipynb (placeholder)
+│     └─ (whatss uppp :)
 └─ docs/
    ├─ overview.md
    ├─ schema.md
