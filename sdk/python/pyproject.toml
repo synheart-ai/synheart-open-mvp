@@ -1,0 +1,12 @@
+[project]
+name = "synheart"
+version = "0.1.0"
+description = "Open MVP SDK for heart-driven intelligence"
+authors = [{ name = "Synheart AI" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["pydantic>=2.7", "numpy>=1.24", "httpx>=0.27"]
+
+[project.urls]
+Homepage = "https://synheart.ai"
+Repository = "https://github.com/synheart-ai/open-mvp"

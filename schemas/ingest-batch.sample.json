@@ -1,0 +1,92 @@
+{
+  "spec_version": "0.1.0",
+  "session": {
+    "session_id": "550e8400-e29b-41d4-a716-446655440000",
+    "subject_id": "anon_1234",
+    "consent_id": "consent_v1",
+    "timezone": "America/Vancouver",
+    "device": {
+      "make": "Apple",
+      "model": "Watch Series 9",
+      "firmware_version": "10.1"
+    },
+    "start_at": "2025-10-15T19:00:00Z",
+    "end_at": "2025-10-15T19:05:00Z"
+  },
+  "signals": [
+    {
+      "stream": "heart_rate",
+      "unit": "bpm",
+      "sampling_hz": 1,
+      "points": [
+        {"t": 0, "v": 72},
+        {"t": 1, "v": 71},
+        {"t": 2, "v": 73},
+        {"t": 3, "v": 70},
+        {"t": 4, "v": 74},
+        {"t": 5, "v": 72},
+        {"t": 6, "v": 75},
+        {"t": 7, "v": 73},
+        {"t": 8, "v": 71},
+        {"t": 9, "v": 76}
+      ]
+    },
+    {
+      "stream": "ibi_ms",
+      "unit": "ms",
+      "sampling_hz": 1,
+      "points": [
+        {"t": 0, "v": 860},
+        {"t": 1, "v": 845},
+        {"t": 2, "v": 820},
+        {"t": 3, "v": 870},
+        {"t": 4, "v": 810},
+        {"t": 5, "v": 850},
+        {"t": 6, "v": 800},
+        {"t": 7, "v": 830},
+        {"t": 8, "v": 845},
+        {"t": 9, "v": 790}
+      ]
+    },
+    {
+      "stream": "hrv_rmssd",
+      "unit": "ms",
+      "sampling_hz": 0.2,
+      "points": [
+        {"t": 0, "v": 56.2},
+        {"t": 5, "v": 58.1},
+        {"t": 10, "v": 52.8},
+        {"t": 15, "v": 61.3},
+        {"t": 20, "v": 49.7}
+      ]
+    },
+    {
+      "stream": "accelerometer",
+      "unit": "m/s^2",
+      "sampling_hz": 10,
+      "points": [
+        {"t": 0.0, "v": [0.0, 0.1, 9.8]},
+        {"t": 0.1, "v": [0.1, 0.0, 9.7]},
+        {"t": 0.2, "v": [0.0, -0.1, 9.8]},
+        {"t": 0.3, "v": [-0.1, 0.0, 9.9]},
+        {"t": 0.4, "v": [0.0, 0.1, 9.8]}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "label": "baseline",
+      "t": 0,
+      "duration_s": 30
+    },
+    {
+      "label": "cognitive_task",
+      "t": 30,
+      "duration_s": 60,
+      "properties": {
+        "task": "N-back",
+        "level": 2
+      }
+    }
+  ]
+}

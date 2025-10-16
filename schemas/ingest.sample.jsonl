@@ -1,0 +1,10 @@
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"heart_rate","unit":"bpm","t":0,"v":72}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"heart_rate","unit":"bpm","t":1,"v":71}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"heart_rate","unit":"bpm","t":2,"v":73}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"heart_rate","unit":"bpm","t":3,"v":70}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"heart_rate","unit":"bpm","t":4,"v":74}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"ibi_ms","unit":"ms","t":0,"v":860}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"ibi_ms","unit":"ms","t":1,"v":845}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"ibi_ms","unit":"ms","t":2,"v":820}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"accelerometer","unit":"m/s^2","t":0.0,"v":[0.0,0.1,9.8]}
+{"spec_version":"0.1.0","session_id":"550e8400-e29b-41d4-a716-446655440000","subject_id":"anon_1234","stream":"accelerometer","unit":"m/s^2","t":0.1,"v":[0.1,0.0,9.7]}

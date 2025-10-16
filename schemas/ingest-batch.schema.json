@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Synheart Ingestion Batch Schema v0.1.0",
+  "type": "object",
+  "required": ["spec_version", "session", "signals"],
+  "properties": {
+    "spec_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "session": {
+      "type": "object",
+      "required": ["session_id", "subject_id", "start_at", "end_at"],
+      "properties": {
+        "session_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "subject_id": {
+          "type": "string",
+          "pattern": "^anon_[a-zA-Z0-9]+$"
+        },
+        "consent_id": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "device": {
+          "type": "object",
+          "properties": {
+            "make": {"type": "string"},
+            "model": {"type": "string"},
+            "firmware_version": {"type": "string"}
+          }
+        },
+        "start_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "signals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stream", "unit", "sampling_hz", "points"],
+        "properties": {
+          "stream": {
+            "type": "string",
+            "enum": ["heart_rate", "ibi_ms", "hrv_rmssd", "accelerometer", "resp_rate", "skin_temp_c"]
+          },
+          "unit": {
+            "type": "string",
+            "enum": ["bpm", "ms", "m/s^2", "breaths/min", "°C"]
+          },
+          "sampling_hz": {
+            "type": "number",
+            "minimum": 0
+          },
+          "points": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["t", "v"],
+              "properties": {
+                "t": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "v": {
+                  "oneOf": [
+                    {"type": "number"},
+                    {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3}
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "t"],
+        "properties": {
+          "label": {"type": "string"},
+          "t": {"type": "number", "minimum": 0},
+          "duration_s": {"type": "number", "minimum": 0},
+          "properties": {"type": "object"}
+        }
+      }
+    }
+  }
+}
